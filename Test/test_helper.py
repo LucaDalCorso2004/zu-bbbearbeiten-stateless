@@ -23,8 +23,8 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(item,"Bbb")   
         title2 = "b"
         helper.add(title2)
-        item2 = helper.todos[0].title
-        self.assertEqual(item2,"Bbb")        
+        item2 = helper.todos[1].title
+        self.assertEqual(item2,"bbb")        
          
 
 # python -m unittest Test/test_helper.py
