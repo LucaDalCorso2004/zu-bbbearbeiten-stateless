@@ -13,6 +13,8 @@ def add(title):
     title = title.replace('b', 'bbb').replace('B', 'Bbb')
     todos.append(Item(title))
 
+def delete_all ():
+    todos.clear()
 
 def get_all():
     return todos
@@ -24,3 +26,4 @@ def get(index):
 
 def update(index):
     todos[index].isCompleted = not todos[index].isCompleted
+
